@@ -10,9 +10,7 @@ const defaultStore = {
     posts,
     comments
 }
-let c;
-compose(f => console.log(f));
-debugger;
+
 const enhancers = compose(
     window.devToolsExtension ? window.devToolsExtension() : f => f
 );
